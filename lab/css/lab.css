@@ -1,0 +1,74 @@
+.body {
+    background-color: #f8f9fa;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container .anh {
+    position: relative;
+}
+
+.container .sale {
+    position: absolute;
+    background-color: rgba(0, 202, 202, 0.64);
+    width: 70px;
+    height: 30px;
+    left: 4px;
+    top: 4px;
+    font-weight: bold;
+}
+
+.sale::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    right: 0;
+    border-right-width: 30px 30px 20px;
+    border-right-style: solid;
+    border-right-color: transparent rgba(0, 202, 202, 0.64) transparent rgba(0, 202, 202, 0.64);
+}
+
+.giam {
+    color: orange;
+}
+
+.goc {
+    color: gray;
+}
+
+.text {
+    text-decoration: none;
+    color: black;
+    text-align: justify;
+}
+
+.label {
+    color: white;
+}
+
+.sao {
+    padding: 20px;
+}
+.row{
+    padding-bottom: 20px;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+.img-thumbnail{
+    border-bottom: 5px solid orange;
+}

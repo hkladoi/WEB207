@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body ng-app="myapp">
+    <div class="row" ng-controller="mycon">
+        <div class="col-md-4" ng-repeat="list in listsp">
+            <div class="anh" style="position: relative;">
+                <div class="saleoff"> <img src="image/bookmark3.png" alt="">
+                    <p class="label">SALE </p>
+                </div>
+                <img src="{{list.image}}" class="img-thumbnail" alt="...">
+            </div>
+            <p>ÁO BA LỖ</p>
+            <a class="text" href="#">Áo 3 lỗ Mixi-BL02 <br></a>
+            <img src="image/stars4.png" alt="" width="100px">
+            <p>giaban:{{list.giaban}}</p>
+            <p>mota:{{list.mota}}</p>
+        </div>
+    </div>
+    <script>
+        // function sanpham($scope) {
+        //     var sp = {
+        //         image: "image/sp6.png",
+        //         giaban: 100000,
+        //         mota: "ĐM VNPT",
+        //     }
+        //     $scope.sanpham = sp;
+
+        // }
+        // var app = angular.module("myapp", []);
+        // app.controller("mycon", sanpham);
+        function sanphams($scope) {
+            var list = [
+                {
+                    image: "image/sp6.png",
+                    giaban: 100000,
+                    mota: "ĐM VNPT",
+                },
+                {
+                    image: "image/sp6.png",
+                    giaban: 100000,
+                    mota: "ĐM VNPT",
+                },
+                {
+                    image: "image/sp6.png",
+                    giaban: 100000,
+                    mota: "ĐM VNPT",
+                },
+                {
+                    image: "image/sp6.png",
+                    giaban: 100000,
+                    mota: "ĐM VNPT",
+                },
+                {
+                    image: "image/sp6.png",
+                    giaban: 100000,
+                    mota: "ĐM VNPT",
+                },
+                {
+                    image: "image/sp6.png",
+                    giaban: 100000,
+                    mota: "ĐM VNPT",
+                },
+            ];
+
+            $scope.listsp = list;
+        }
+        var app = angular.module("myapp", []);
+        app.controller("mycon", sanphams);
+    </script>
+    </div>
+
+</body>
+
+</html>

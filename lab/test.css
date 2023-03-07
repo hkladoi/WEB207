@@ -1,0 +1,23 @@
+.container .anh {
+    position: relative;
+}
+.container .sale {
+    position: absolute;
+    background-color: rgba(0, 202, 202, 0.64);
+    width: 70px;
+    height: 30px;
+    left: 4px;
+    top: 4px;
+    font-weight: bold;
+}
+
+.sale::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    right: 0;
+    border-width: 0 30px 20px;
+    border-style: solid;
+    border-color: transparent rgba(0, 202, 202, 0.64) transparent rgba(0, 202, 202, 0.64);
+}

@@ -1,0 +1,88 @@
+{
+  "quanao": [
+    {
+      "id": "1",
+      "name": "Áo mixi",
+      "price": 100000,
+      "color": "đen",
+      "type": "áo ba lỗ"
+    },
+    {
+      "id": "2",
+      "name": "áo csgo",
+      "price": "200000",
+      "color": "xanh",
+      "type": "áo"
+    },
+    {
+      "id": "3",
+      "name": "áo mixer",
+      "price": 0,
+      "color": "q",
+      "type": "q"
+    },
+    {
+      "id": "4",
+      "name": "4",
+      "price": "04",
+      "color": "4",
+      "type": "4"
+    },
+    {
+      "id": "5",
+      "name": "5",
+      "price": "05",
+      "color": "5",
+      "type": "5"
+    },
+    {
+      "id": "6",
+      "name": "6",
+      "price": "06",
+      "color": "6",
+      "type": "6"
+    },
+    {
+      "id": "7",
+      "name": "7",
+      "price": "07",
+      "color": "7",
+      "type": "7"
+    },
+    {
+      "id": "8",
+      "name": "8",
+      "price": "08",
+      "color": "8",
+      "type": "8"
+    },
+    {
+      "id": "9",
+      "name": "9",
+      "price": "09",
+      "color": "9",
+      "type": "9"
+    },
+    {
+      "id": "bbw0enF",
+      "name": "",
+      "price": 0,
+      "color": "",
+      "type": ""
+    },
+    {
+      "id": "LXqfgAP",
+      "name": "",
+      "price": 0,
+      "color": "",
+      "type": ""
+    },
+    {
+      "id": "4TluHSC",
+      "name": "",
+      "price": 0,
+      "color": "",
+      "type": ""
+    }
+  ]
+}
