@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <link rel="stylesheet" href="css/sale.css">
+    <link rel="shortcut icon" type="image/png" href="image/icon.png" />
+</head>
+
+<body ng-app="myapp">
+    <nav ng-include="'header.html'"></nav>
+    <div ng-view></div>
+    <nav ng-include="'footer.html'"></nav>
+    <script>
+        var app = angular.module("myapp", ["ngRoute"]);
+        app.config(function ($routeProvider, $locationProvider) {
+            $locationProvider.hashPrefix("");
+            $routeProvider
+                .when("/home", {
+                    templateUrl: "index.html",
+                    controller: ShowSP, 
+                })
+                .when("/gioithieu", {
+                    templateUrl: "gioithieu.html",
+                })
+                .when("/sanpham", {
+                    templateUrl: "sanpham.html",
+                    controller: ShowSP, 
+                })
+                .when("/giohang",
+                    {
+                        templateUrl: "giohang.html",
+                    })
+                .when("/login",
+                    {
+                        templateUrl: "login.html",
+                    })
+                .when("/signup",
+                    {
+                        templateUrl: "signup.html",
+                    })
+                    .when("/quantri",
+                    {
+                        templateUrl: "quantri.html",
+                        controller: ShowSP, 
+                    })
+                .otherwise({
+                    templateUrl: "index.html",
+                    controller: ShowSP, 
+                });
+        });
+    </script>
+    <script src="ass.js"></script>
+</body>
+
+</html>

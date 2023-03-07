@@ -1,0 +1,73 @@
+<div class="container">
+    <form action="" method="post">
+        <h1 style="text-align: center;">Thêm sản phẩm</h1>
+                <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">Tên sản phẩm</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-sm" ng-model="ten">
+                </div>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputGroupSelect01">Thể loại</label>
+                    <select class="form-select" id="inputGroupSelect01" ng-model="theloai">
+                        <option selected>Mời chọn...</option>
+                        <option value="Áo cộc">Áo cộc</option>
+                        <option value="lego">Lego</option>
+                        <option value="Áo khoác">Áo khoác</option>
+                    </select>
+                </div>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputGroupSelect01">Màu sắc</label>
+                    <select class="form-select" id="inputGroupSelect01" ng-model="mausac">
+                        <option selected>Mời chọn...</option>
+                        <option value="Đỏ">Đỏ</option>
+                        <option value="Xanh">Xanh</option>
+                        <option value="Đen">Đen</option>
+                    </select>
+                </div>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputGroupSelect01">Size</label>
+                    <select class="form-select" id="inputGroupSelect01" ng-model="size">
+                        <option selected>Mời chọn...</option>
+                        <option value="X">X</option>
+                        <option value="XL">XL</option>
+                        <option value="M">M</option>
+                    </select>
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">Giá</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-sm" ng-model="giaban">
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">Giảm giá</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-sm" ng-model="giamgia">
+                </div>
+                <a class="btn btn-primary"  style="color: aliceblue;" role="button" ng-click="add()">Add</a>
+                <a class="btn btn-primary"  style="color: aliceblue;" role="button" ng-click="update()">Update</a>
+    </form>
+    <form action="" method="get">
+        <table class="table" method="get">
+            <thead>
+                <tr>
+                    <th scope="col">Tên</th>
+                    <th scope="col">Giá</th>
+                    <th scope="col">Thể loại</th>\
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody ng-repeat="sp in lstSP">
+                <tr>
+                    <td>{{sp.ten}} {{sp.size}} {{sp.mausac}}</td>
+                    <td>{{sp.theloai}}</td>
+                    <td>{{sp.giaban}}</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-outline-primary "ng-click="chitiet(sp.id)"  >Chi tiết</button>
+                        <button type="button" class="btn btn-outline-primary "ng-click="delete(sp.id)"  >Xóa</button>
+                        <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
