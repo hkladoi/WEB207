@@ -4,17 +4,22 @@
 </div>
 <div class="container text-center" style="padding: 0px;">
     <div class="row align-items-start">
-        <div class="col-3 col-md-3">
+        <div class="col-3 col-md-3" ng-repeat="ass in lst" ng-if="$index < 8">
             <div class="anh" style="position: relative;">
                 <div class="hot"><img src="image/bookmark4.png" alt="">
-                    <p class="label">HOT </p>
+                    <p class="label" ng-if="!ass.giamgia">{{ass.trangthai}} </p>
+                    <p class="label" ng-if="ass.giamgia">SALE</p>
                 </div>
                 <img src="image/sp8.png" class="img-thumbnail" alt="...">
             </div>
-            <p>ĐỒ LƯU NIỆM MIXI</p>
-            <a class="text" href="chitietsp.html">Bộ Ghép Hình Mixi - Mixi Block SS7</a>
-            <img src="image/stars4.png" alt="" width="100px">
-            <h5>370,000₫</h5>
+            <p>{{ass.theloai}}</p>
+            <a class="text" href="#/chitiet/{{ass.id}}">{{ass.ten}} {{ass.mausac}}-{{ass.size}}</a><br>
+            <img src="image/stars4.png" alt="" width="100px"><br>
+            <div style="display: inline-flex;">
+                <h5 ng-if="!ass.giamgia">{{ass.giaban | currency: 'đ':0 }}</h5>
+                <h5 ng-if="ass.giamgia"><del>{{ass.giaban | currency: 'đ':0 }}</del><h5 style="color: red;">{{ass.giamgia | currency: 'đ':0 }}</h5>
+                </h5>
+            </div>
         </div>
     </div>
     <div class="row align-items-start">

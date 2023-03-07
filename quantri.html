@@ -6,31 +6,29 @@
                     <input type="text" class="form-control" aria-label="Sizing example input"
                         aria-describedby="inputGroup-sizing-sm" ng-model="ten">
                 </div>
-                <div class="input-group mb-3">
+                <div class="input-group mb-3" >
                     <label class="input-group-text" for="inputGroupSelect01">Thể loại</label>
-                    <select class="form-select" id="inputGroupSelect01" ng-model="theloai">
-                        <option selected>Mời chọn...</option>
-                        <option value="Áo cộc">Áo cộc</option>
-                        <option value="lego">Lego</option>
-                        <option value="Áo khoác">Áo khoác</option>
+                    <select class="form-select" ng-model="theloai" onchange="showHideOptions()" id="loai">
+                        <option value="Đồ lưu niệm Mixi">Đồ lưu niệm Mixi</option>
+                        <option value="Áo ba lỗ">Áo ba lỗ</option>
+                        <option value="Áo mixi">Áo mixi</option>
+                        <option value="Áo CSGO">Áo CSGO</option>
                     </select>
                 </div>
-                <div class="input-group mb-3">
+                <div class="input-group mb-3" hidden id="mau">
                     <label class="input-group-text" for="inputGroupSelect01">Màu sắc</label>
-                    <select class="form-select" id="inputGroupSelect01" ng-model="mausac">
-                        <option selected>Mời chọn...</option>
-                        <option value="Đỏ">Đỏ</option>
-                        <option value="Xanh">Xanh</option>
+                    <select class="form-select" id="inputGroupSelect01" ng-model="mausac" >
+                        <option value="Trắng">Trắng</option>
                         <option value="Đen">Đen</option>
                     </select>
                 </div>
-                <div class="input-group mb-3">
+                <div class="input-group mb-3" hidden id="size">
                     <label class="input-group-text" for="inputGroupSelect01">Size</label>
                     <select class="form-select" id="inputGroupSelect01" ng-model="size">
-                        <option selected>Mời chọn...</option>
                         <option value="X">X</option>
-                        <option value="XL">XL</option>
                         <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
                     </select>
                 </div>
                 <div class="input-group input-group-sm mb-3">
@@ -46,25 +44,27 @@
                 <a class="btn btn-primary"  style="color: aliceblue;" role="button" ng-click="add()">Add</a>
                 <a class="btn btn-primary"  style="color: aliceblue;" role="button" ng-click="update()">Update</a>
     </form>
+
     <form action="" method="get">
-        <table class="table" method="get">
+        <table class="table">
             <thead>
                 <tr>
                     <th scope="col">Tên</th>
+                    <th scope="col">Thể loại</th>
                     <th scope="col">Giá</th>
-                    <th scope="col">Thể loại</th>\
                     <th scope="col"></th>
                 </tr>
             </thead>
-            <tbody ng-repeat="sp in lstSP">
+            <tbody ng-repeat="sp in lst">
                 <tr>
-                    <td>{{sp.ten}} {{sp.size}} {{sp.mausac}}</td>
+                    <td>{{sp.ten}} {{sp.mausac}}-{{sp.size}}</td>
                     <td>{{sp.theloai}}</td>
-                    <td>{{sp.giaban}}</td>
-                    
+                    <td ng-if="!sp.giamgia">{{sp.giaban}}</td>
+                    <td ng-if="sp.giamgia">{{sp.giamgia}}</td>
+                    <td></td>
                     <td>
-                        <button type="button" class="btn btn-outline-primary "ng-click="chitiet(sp.id)"  >Chi tiết</button>
-                        <button type="button" class="btn btn-outline-primary "ng-click="delete(sp.id)"  >Xóa</button>
+                        <a role="button" class="btn btn-primary " ng-click="detail(sp.id)">Chi tiết</a>
+                        <a role="button" class="btn btn-primary " ng-click="delete(sp.id)">Xóa</a>
                         <td></td>
                 </tr>
             </tbody>

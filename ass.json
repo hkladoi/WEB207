@@ -1,12 +1,113 @@
 {
-    "sanpham":{
-        "id":"1",
-        "ten":"Bộ Ghép Hình Mixi - Mixi Block SS7",
-        "giaban":"100000",
-        "theloai":"ĐỒ LƯU NIỆM MIXI",
-        "giamgia":"",
-        "trangthai":"HOT",
-        "size":"",
-        "mausac":""
+  "sanpham": [
+    {
+      "id": "1",
+      "ten": "Bộ Ghép Hình Mixi - Mixi Block SS7",
+      "giaban": "100000",
+      "theloai": "Đồ lưu niệm Mixi",
+      "trangthai": "HOT",
+      "size": "",
+      "mausac": ""
+    },
+    {
+      "id": "2",
+      "ten": "Bộ Ghép Hình Mixi - Mixi Block SS7",
+      "giaban": "100000",
+      "theloai": "Đồ lưu niệm Mixi",
+      "giamgia": "2222",
+      "trangthai": "HOT",
+      "size": "",
+      "mausac": ""
+    },
+    {
+      "id": "3",
+      "ten": "Bộ Ghép Hình Mixi - Mixi Block SS7",
+      "giaban": "100000",
+      "theloai": "Đồ lưu niệm Mixi",
+      "giamgia": "2222",
+      "trangthai": "HOT",
+      "size": "",
+      "mausac": ""
+    },
+    {
+      "id": "4",
+      "ten": "Áo ba lỗ",
+      "giaban": "100000",
+      "theloai": "Áo ba lỗ",
+      "mausac": "Trắng",
+      "size": "X",
+      "giamgia": "2222",
+      "trangthai": "HOT"
+    },
+    {
+      "id": "5",
+      "ten": "Bộ Ghép Hình Mixi - Mixi Block SS7",
+      "giaban": "100000",
+      "theloai": "Áo ba lỗ",
+      "giamgia": "2222",
+      "trangthai": "HOT",
+      "size": "",
+      "mausac": ""
+    },
+    {
+      "id": "6",
+      "ten": "Bộ Ghép Hình Mixi - Mixi Block SS7",
+      "giaban": "100000",
+      "theloai": "Áo ba lỗ",
+      "giamgia": "2222",
+      "trangthai": "HOT",
+      "size": "",
+      "mausac": ""
+    },
+    {
+      "id": "7",
+      "ten": "Bộ Ghép Hình Mixi - Mixi Block SS7",
+      "giaban": "100000",
+      "theloai": "Áo mixi",
+      "giamgia": "2222",
+      "trangthai": "HOT",
+      "size": "",
+      "mausac": ""
+    },
+    {
+      "id": "8",
+      "ten": "Bộ Ghép Hình Mixi - Mixi Block SS7",
+      "giaban": "100000",
+      "theloai": "Áo mixi",
+      "giamgia": "2222",
+      "trangthai": "HOT",
+      "size": "",
+      "mausac": ""
+    },
+    {
+      "id": "9",
+      "ten": "Bộ Ghép Hình Mixi - Mixi Block SS7",
+      "giaban": "100000",
+      "theloai": "Áo mixi",
+      "giamgia": "2222",
+      "trangthai": "HOT",
+      "size": "",
+      "mausac": ""
+    },
+    {
+      "id": "10",
+      "ten": "Bộ Ghép Hình Mixi - Mixi Block SS7",
+      "giaban": "100000",
+      "theloai": "Áo CSGO",
+      "giamgia": "2222",
+      "trangthai": "HOT",
+      "size": "",
+      "mausac": ""
+    },
+    {
+      "id": "WK7p6nj",
+      "ten": "Áo CSGO1",
+      "giaban": "100000",
+      "theloai": "Áo CSGO",
+      "mausac": "Đen",
+      "size": "L",
+      "giamgia": "",
+      "trangthai": "HOT"
     }
+  ]
 }

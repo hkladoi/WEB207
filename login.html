@@ -1,73 +1,6 @@
-<!doctype html>
-<html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MixiShop</title>
-    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/sale.css">
-    <link rel="shortcut icon" type="image/png" href="image/icon.png" />
-    <link rel="stylesheet" href="css/mdb.min.css" />
-</head>
-
-<body style="background-color: #f8f9fa; font-family: 'Quicksand',sans-serif;">
     <script type="text/javascript" src="js/mdb.min.js"></script>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="padding: 0; position: relative;">
-        <div class="container-fluid"
-            style="background-color: white; padding-left: 10%; padding-right: 10%; font-weight: bold; font-size: medium;">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a href="index.html" class="logo"><img src="image/logo.png" alt=""></a>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">HOME</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> DANH
-                            MỤC SẢN PHẨM</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="sanpham.html">Đồ lưu niệm Mixi</a></li>
-                                <li><a class="dropdown-item" href="sanpham.html">Áo ba lỗ</a></li>
-                                <li><a class="dropdown-item" href="#">Áo mixi</a></li>
-                                <li><a class="dropdown-item" href="#">Áo CSGO</a></li>
-                            </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="gioithieu.html">GIỚI THIỆU</a>
-                    </li>
-                </ul>
-                <a class="navbar-brand" href="#" style="padding-left: 50px;">
-                    <img src="image/timkiem.png" alt="" width="30" height="24" type="submit">
-                </a>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                </form>
-            </div>
-            <ul class="nav justify-content-end">
-                <a class="navbar-brand" href="#">
-                    <img src="image/phone-call2.png" alt="">
-                </a>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
-                        style="border-right: 1px solid gray; color: gray;">0922222016</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="giohang.html">GIỎ HÀNG / 840.000 đ <img src="image/shopping-cart3.png" alt="" width="30" height="24"></a>
-                </li>
-                <a class="btn btn-primary" href="login.html" role="button" style="margin-right: 10px;">Đăng nhập</a>
-                <a class="btn btn-primary" href="signup.html" role="button">Đăng ký</a>
-            </ul>
-        </div>
-    </nav>
 
     <div class="modal top fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
         data-mdb-backdrop="true" data-mdb-keyboard="true">
@@ -86,8 +19,8 @@
                     </div>
                     <a href="#" class="btn btn-primary w-100" style="font-size: 15px;">Thay đổi mật khẩu</a>
                     <div class="d-flex justify-content-between mt-4">
-                        <a class="" href="login.html" style="font-size: 20px;">Đăng nhập</a>
-                        <a class="" href="signup.html" style="font-size: 20px;">Đăng ký</a>
+                        <a class="" href="#login" style="font-size: 20px;">Đăng nhập</a>
+                        <a class="" href="#signup" style="font-size: 20px;">Đăng ký</a>
                     </div>
                 </div>
             </div>
@@ -119,14 +52,10 @@
 
                                 <button class="btn btn-outline-danger btn-lg px-5" type="submit">Đăng nhập</button>
 
-                                <div class="d-flex justify-content-center text-center mt-4 pt-1">
-                                    <a href="#!" class="text-dark"><i class="fab fa-facebook-f fa-lg"></i></a>
-                                    <a href="#!" class="text-dark"><i class="fab fa-twitter fa-lg mx-4 px-2"></i></a>
-                                    <a href="#!" class="text-dark"><i class="fab fa-google fa-lg"></i></a>
-                                </div>
+                                
                             </div>
                             <div>
-                                <p class="mb-0" style="font-size: 20px;">Chưa có tài khoản? <a href="signup.html"
+                                <p class="mb-0" style="font-size: 20px;">Chưa có tài khoản? <a href="#signup"
                                         class="text-dark-50 fw-bold">Sign Up</a>
                                 </p>
                             </div>
@@ -137,56 +66,4 @@
         </div>
     </section>
 
-    <div class="card">
-        <div class="card-body">
-            <div class="container text-center">
-                <div class="row align-items-start">
-                    <div class="col">
-                        Về chúng tôi
-                        <p class="card-text">Website chính thức và duy nhất của MixiShop. Hiện tại chúng mình chỉ nhận
-                            đơn hàng trên website chứ không nhận bất kỳ nơi nào khác nhé !</p>
-                    </div>
-                    <div class="col">
-                        Danh mục sản phẩm
-                        <ul class="bar">
-                            <li class="na">
-                                <a class="nav-link" href="sanpham.html">Đồ lưu niệm Mixi</a>
-                            </li>
-                            <li class="na">
-                                <a class="nav-link" href="#">Áo ba lỗ</a>
-                            </li>
-                            <li class="na">
-                                <a class="nav-link" href="#">Áo Mixi</a>
-                            </li>
-                            <li class="na"><a class="nav-link" href="#">Áo CSGO</a></li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        Thông tin
-                        <ul class="bar">
-                            <li class="na">
-                                <a class="nav-link" href="gioithieu.html">Giới thiệu</a>
-                            </li>
-                            <li class="na">
-                                <a class="nav-link" href="#">Điều khoản</a>
-                            </li>
-                            <li class="na">
-                                <a class="nav-link" href="#">Chính sách bảo mật</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        Hỗ trợ
-                        <p class="card-text">Mọi thắc mắc và góp ý cần hỗ trợ xin vui lòng liên hệ Fanpage</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="card-footer text-muted" style="padding-left: 15%; font-weight: bold; font-size: 20px;">
-            Copyright 2023 © Hkladoi
-        </div>
-    </div>
-</body>
-
-</html>
+    
